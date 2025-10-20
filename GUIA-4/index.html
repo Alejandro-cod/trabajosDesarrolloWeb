@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GymPower - Rutinas y Entrenamiento</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-danger" href="#">💪 GymPower</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rutinas">Rutinas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="inicio" class="text-center text-white py-5 header-bg">
+    <div class="container">
+      <h1 class="fw-bold">Entrena con Nosotros</h1>
+      <p class="lead">Rutinas personalizadas, disciplina y resultados reales.</p>
+      <a href="#rutinas" class="btn btn-danger btn-lg mt-3">Ver Rutinas</a>
+    </div>
+  </header>
+
+  <!-- SECCIÓN RUTINAS -->
+  <section id="rutinas" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Rutinas Destacadas</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://picsum.photos/400/200?gym1" class="card-img-top" alt="Fullbody">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Rutina Full Body</h5>
+              <p class="card-text">Ideal para principiantes. Entrena todo el cuerpo en una sola sesión.</p>
+              <button class="btn btn-outline-danger" onclick="mostrarMensaje('🔥 Rutina Full Body agregada a tu plan')">Agregar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://picsum.photos/400/200?gym2" class="card-img-top" alt="Piernas">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Piernas de Acero</h5>
+              <p class="card-text">Fortalece tus piernas con ejercicios intensos y progresivos.</p>
+              <button class="btn btn-outline-danger" onclick="mostrarMensaje('🏋️ Rutina Piernas de Acero agregada a tu plan')">Agregar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://picsum.photos/400/200?gym3" class="card-img-top" alt="Abdomen">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Abdomen Definido</h5>
+              <p class="card-text">Ejercicios específicos para definir y tonificar tu zona media.</p>
+              <button class="btn btn-outline-danger" onclick="mostrarMensaje('💥 Rutina Abdomen Definido agregada a tu plan')">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO LOGIN -->
+  <section id="login" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold text-danger">Inicia Sesión</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="formLogin" class="border p-4 rounded bg-white shadow-sm">
+            <div class="mb-3">
+              <label for="usuario" class="form-label fw-semibold">Usuario</label>
+              <input type="text" id="usuario" class="form-control" placeholder="Ingrese su usuario">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label fw-semibold">Contraseña</label>
+              <input type="password" id="password" class="form-control" placeholder="Ingrese su contraseña">
+            </div>
+            <button type="submit" class="btn btn-danger w-100 fw-bold">Ingresar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL DINÁMICO -->
+  <div class="modal fade" id="modalMensaje" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="modalTitulo">Notificación</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="modalCuerpo">
+          <!-- Contenido dinámico -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 GymPower | Tu fuerza comienza hoy 💪</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
