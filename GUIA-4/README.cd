@@ -1,0 +1,14 @@
+# 💪 GymPower
+
+**GymPower** es una página web de ejemplo para un centro de entrenamiento, con rutinas destacadas, diseño responsivo y funcionalidades básicas como inicio de sesión y notificaciones interactivas. Construida con **HTML**, **CSS**, **Bootstrap 5** y **JavaScript**.
+
+---
+## 🚀 Funcionalidades
+
+- ✅ Navbar responsiva con Bootstrap
+- ✅ Sección de presentación (Header)
+- ✅ Tarjetas de rutinas con imágenes y botones interactivos
+- ✅ Modal dinámico para notificaciones al agregar rutinas
+- ✅ Formulario de inicio de sesión con validación básica
+- ✅ Diseño moderno y adaptado a móviles
+
